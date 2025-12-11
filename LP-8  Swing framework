@@ -1,0 +1,45 @@
+Import 
+javax.swing.*; 
+import 
+java.awt.*; 
+import 
+java.awt.event.*
+; 
+public class myswing { 
+public static void main(String[] args) { 
+// Create the main JFrame 
+JFrame frame = new JFrame("Swing Input Display Application"); 
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+frame.setSize(400, 300); 
+frame.setLayout(new FlowLayout()); 
+// Create a JLabel to display instructions 
+JLabel instructionLabel = new JLabel("Enter your Name:"); 
+frame.add(instructionLabel); 
+// Create a JTextField for user input 
+JTextField textField = new 
+JTextField(20); frame.add(textField);
+// Create a JButton for submission 
+JButton submitButton = new JButton("Submit"); 
+frame.add(submitButton); 
+ 
+// Create a JLabel to display the 
+result JLabel resultLabel = new 
+JLabel(); frame.add(resultLabel); 
+ 
+// Add ActionListener to the submit button 
+submitButton.addActionListener(new ActionListener() { 
+@Override 
+public void actionPerformed(ActionEvent e) { 
+// Get the input from the text 
+field String userInput = 
+textField.getText(); 
+ 
+// Display the input in the result label 
+resultLabel.setText("Welcome"+ " " + userInput); 
+} 
+}); 
+ 
+// Make the frame visible 
+frame.setVisible(true); 
+} 
+} 
