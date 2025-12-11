@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+class division 
+{ 
+public static void main(String[] args) 
+{ 
+int a,b,result; 
+Scanner S = new Scanner(System.in); 
+System.out.println(“Enter two integers”); 
+a=S.nextInt(); 
+b=S.nextInt(); 
+try 
+{ 
+result=a/b; 
+System.out.println(“Result=”+resu
+lt); 
+} 
+catch(ArithmeticException e) 
+{ 
+System.out.println(“Exception caught:Divide by zero error”+e); 
+} 
+S.close(); 
+}
+}
