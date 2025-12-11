@@ -1,0 +1,29 @@
+package p6; 
+abstract class vehicle 
+{ 
+abstract void engine(); 
+} 
+class car extends vehicle 
+{ 
+public void engine() 
+{ 
+System.out.println("Car has good engine"); 
+} 
+} 
+class truck extends vehicle 
+{ 
+public void engine() 
+{ 
+System.out.println("Truck has good engine"); 
+} 
+} 
+public class TestVehicle 
+{ 
+public static void main(String[] args)
+{ 
+OUTPUT: 
+vehicle v=new car(); 
+v.engine(); 
+vehicle n=new truck(); 
+n.engine(); 
+} 
