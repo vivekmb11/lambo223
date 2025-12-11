@@ -1,0 +1,41 @@
+import 
+java.util.*; 
+class 
+employee 
+{ 
+float per=0; 
+double salary=0,isalary=0; 
+Scanner s = new 
+Scanner(System.in); void
+raisesalary() 
+{ 
+System.out.println("Enter the Employee 
+Salary"); salary=s.nextDouble(); 
+System.out.println("Enter the Percentage of salary to be 
+incremented"); per=s.nextFloat(); 
+isalary=salary+((salary*per)/100); 
+} 
+} 
+public class salaryhike 
+{ 
+public static void main(String[] args) 
+{ 
+// TODO Auto-generated method stub int eid=0; 
+String name; 
+Scanner s = new Scanner(System.in); 
+System.out.println("Employee increment\n"); 
+System.out.println("Enter the Employee ID\n"); 
+eid=s.nextInt(); 
+System.out.println("Enter the Employee 
+Name\n"); name=s.next(); 
+employee e=new employee(); 
+e.raisesalary(); 
+System.out.println("Employee 
+name:"+name); 
+System.out.println("Employee ID:"+eid); 
+System.out.println("Present 
+salary:"+e.salary); 
+System.out.println("Incremented 
+salary:"+e.isalary); s.close(); 
+} 
+}
